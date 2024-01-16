@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Project</title>
+</head>
+<body>
+    {% if suitable_for_travel %}
+        <h2>Weather is suitable for travel!</h2>
+        <p>Temperature: {{ temperature }}°C</p>
+        <p>Humidity: {{ humidity }}%</p>
+        <p>Recommended Travel Spots:</p>
+        <ul>
+            {% for spot in travel_spots %}
+                <li>{{ spot }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h2>Weather is not suitable for travel.</h2>
+        <form action="{% url 'weatherApp:index' %}" method="get">
+            <input type="submit" value="Choose Another Region">
+        </form>
+    {% endif %}
+</body>
+</html>
