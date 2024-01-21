@@ -1,6 +1,7 @@
 import requests
 from django.shortcuts import render
 from django.http import HttpResponse
+# from .models import WeatherData
 
 def index(request):
     return render(request, 'weatherApp/index.html')
@@ -40,22 +41,22 @@ def check_weather(request):
 
         # 선택한 지역에 대한 좌표 정보 (예시로 서울 좌표 사용)
         coordinates = {
-            '서울': {'lat': 37.5665, 'lon': 126.9780},
-            '부산': {'lat': 35.1796, 'lon': 129.0756},
-            '대구': {'lat': 35.8714354, 'lon': 128.601445},
-            '인천': {'lat': 37.4562557, 'lon': 126.7052062},
-            '광주': {'lat': 35.1595454, 'lon': 126.8526012},
-            '대전': {'lat': 36.3504119, 'lon': 127.3845475},
-            '울산': {'lat': 35.5383773, 'lon': 129.3113596},
-            '경기도': {'lat': 37.5670, 'lon': 127.1907},
-            '강원도': {'lat': 37.8859, 'lon': 127.7293},
-            '충청북도': {'lat': 36.6357, 'lon': 127.4912},
-            '충청남도': {'lat': 36.5184, 'lon': 126.8000},
-            '전라북도': {'lat': 35.7175, 'lon': 127.1446},
-            '전라남도': {'lat': 34.8679, 'lon': 126.9910},
-            '경상북도': {'lat': 36.4919, 'lon': 128.8889},
-            '경상남도': {'lat': 35.2383, 'lon': 128.6922},
-            '제주도': {'lat': 33.4889, 'lon': 126.4983}
+            '서울': {'lat': 37.5683, 'lon': 126.9778},
+            '부산': {'lat': 35.1028, 'lon': 129.0403},
+            '대구': {'lat': 35.8, 'lon': 128.55},
+            '인천': {'lat': 37.45, 'lon': 126.4161},
+            '광주': {'lat': 35.1547, 'lon': 126.9156},
+            '대전': {'lat': 36.3214, 'lon': 127.4197},
+            '울산': {'lat': 35.5372, 'lon': 129.3167},
+            '경기도': {'lat': 37.6, 'lon': 127.25},
+            '강원도': {'lat': 37.75, 'lon': 128.25},
+            '충청북도': {'lat': 36.75, 'lon': 128},
+            '충청남도': {'lat': 36.5, 'lon': 127},
+            '전라북도': {'lat': 35.75, 'lon': 127.25},
+            '전라남도': {'lat': 34.75, 'lon': 127},
+            '경상북도': {'lat': 36.3333, 'lon': 128.75},
+            '경상남도': {'lat': 35.25, 'lon': 128.25},
+            '제주도': {'lat': 33.5097, 'lon': 126.5219}
         }
 
         # 선택한 지역의 좌표
@@ -72,7 +73,7 @@ def check_weather(request):
 
             suitable_for_travel = True
 
-            if temperature is None or humidity is None or temperature <= -15 or temperature > 35 or humidity > 70:
+            if temperature is None or humidity is None or temperature <= -15 or temperature > 35 or humidity > 90:
                 suitable_for_travel = False
 
             if suitable_for_travel:

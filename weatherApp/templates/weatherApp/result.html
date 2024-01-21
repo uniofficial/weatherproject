@@ -2,22 +2,26 @@
 <html>
 <head>
     <title>Weather Project</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
     {% if suitable_for_travel %}
-        <h2>Weather is suitable for travel!</h2>
-        <p>Temperature: {{ temperature }}°C</p>
-        <p>Humidity: {{ humidity }}%</p>
-        <p>Recommended Travel Spots:</p>
+        <h2>여행 가기 좋은 날씨네요!</h2>
+        <p>기온 : {{ temperature }}°C</p>
+        <p>습도 : {{ humidity }}%</p>
+        <p>추천 명소 :</p>
         <ul>
             {% for spot in travel_spots %}
                 <li>{{ spot }}</li>
             {% endfor %}
         </ul>
     {% else %}
-        <h2>Weather is not suitable for travel.</h2>
+        <h2>날씨가 더 좋은 날에 가는 건 어떨까요?</h2>
+        <p>기온 : {{ temperature }}°C</p>
+        <p>습도 : {{ humidity }}%</p>
         <form action="{% url 'weatherApp:index' %}" method="get">
-            <input type="submit" value="Choose Another Region">
+            <input type="submit" value="다른 지역 선택">
         </form>
     {% endif %}
 </body>
