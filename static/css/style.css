@@ -1,9 +1,7 @@
-/* static/css/style.css */
-
 /* 전체 페이지 스타일 */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #FFE4E1;
     color: #333;
     margin: 0;
     padding: 0;
@@ -11,23 +9,27 @@ body {
 
 /* 페이지 내 헤더 스타일 */
 h2 {
-    color: #4285f4;
+    color: #DB7093;
+    margin: 160px auto 10px;
+    text-align: center;
 }
 
 /* 폼 스타일 */
 form {
     max-width: 400px;
-    margin: 20px auto;
+    margin: 30px auto 10px;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 /* 입력 필드 스타일 */
 label {
     display: block;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 select, input {
@@ -41,25 +43,33 @@ select, input {
 
 /* 버튼 스타일 */
 input[type="submit"] {
-    background-color: #4285f4;
+    background-color: #DB7093;
     color: #fff;
     cursor: pointer;
 }
 
 /* 결과 페이지 스타일 */
 .result-container {
-    max-width: 600px;
+    max-width: 400px; /* 조절된 크기로 변경 */
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 결과 페이지 - 헤더 제목 스타일 */
+.result-container h2 {
+    color: #DB7093;
+    margin-bottom: 20px; /* 원하는 간격으로 조절 */
 }
 
 /* 결과 페이지 - 추천 명소 리스트 스타일 */
 ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 ul li {

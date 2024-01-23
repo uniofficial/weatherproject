@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="488f2e93-b6f1-42d5-86fe-55f11b70409e" name="Changes" comment="commit1">
-      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weatherApp/migrations/0001_initial.py" afterDir="false" />
+    <list default="true" id="488f2e93-b6f1-42d5-86fe-55f11b70409e" name="Changes" comment="commit2">
+      <change afterPath="$PROJECT_DIR$/weatherApp/migrations/0002_travelspot_delete_weatherdata.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherApp/templates/weatherApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/templates/weatherApp/index.html" afterDir="false" />
@@ -87,7 +86,11 @@
       <workItem from="1705556457339" duration="7978000" />
       <workItem from="1705572675977" duration="1184000" />
       <workItem from="1705808416715" duration="5399000" />
-      <workItem from="1705829720219" duration="495000" />
+      <workItem from="1705829720219" duration="2151000" />
+      <workItem from="1705839992283" duration="8307000" />
+      <workItem from="1705849313010" duration="1845000" />
+      <workItem from="1705899273494" duration="163000" />
+      <workItem from="1705899439094" duration="375000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <option name="closed" value="true" />
@@ -97,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705418392606</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit2">
+      <option name="closed" value="true" />
+      <created>1705830230427</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705830230427</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="commit1" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit1" />
+    <MESSAGE value="commit2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit2" />
   </component>
 </project>
