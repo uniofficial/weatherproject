@@ -4,16 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="488f2e93-b6f1-42d5-86fe-55f11b70409e" name="Changes" comment="commit2">
-      <change afterPath="$PROJECT_DIR$/weatherApp/migrations/0002_travelspot_delete_weatherdata.py" afterDir="false" />
+    <list default="true" id="488f2e93-b6f1-42d5-86fe-55f11b70409e" name="Changes" comment="commit3">
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/가야랜드.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/간절곶.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/경복궁.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/국립광주과학관.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/국립광주박물관.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/국립생태원.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/남산타워.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/남이섬.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/대관령.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/대흥사.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/독립기념관.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/명선도.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/범어사.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/부석사.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/선유도.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/성산일출봉.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/성심당.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/에버랜드.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/오동도.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/워터파크.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/월미도.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/의림지.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/이월드.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/전주한옥마을.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/지리산.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/차이나타운.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/천지연폭포.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/첨성대.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/한국민속촌.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/한밭수목원.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/해운대.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/활옥동굴.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weatherApp/migrations/0003_travelspot_image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherApp/templates/weatherApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/templates/weatherApp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherApp/templates/weatherApp/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/templates/weatherApp/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +81,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/uni/PycharmProjects/weatherProject/media/travel_spot_images&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -61,6 +93,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/media/travel_spot_images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/weatherApp/templates/weatherApp" />
     </key>
@@ -91,6 +126,8 @@
       <workItem from="1705849313010" duration="1845000" />
       <workItem from="1705899273494" duration="163000" />
       <workItem from="1705899439094" duration="375000" />
+      <workItem from="1706017091051" duration="3073000" />
+      <workItem from="1706157827407" duration="1431000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <option name="closed" value="true" />
@@ -108,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705830230427</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit3">
+      <option name="closed" value="true" />
+      <created>1706017122900</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706017122900</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +163,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="commit1" />
     <MESSAGE value="commit2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit2" />
+    <MESSAGE value="commit3" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit3" />
   </component>
 </project>
