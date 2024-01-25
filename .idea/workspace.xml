@@ -4,47 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="488f2e93-b6f1-42d5-86fe-55f11b70409e" name="Changes" comment="commit3">
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/가야랜드.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/간절곶.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/경복궁.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/국립광주과학관.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/국립광주박물관.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/국립생태원.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/남산타워.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/남이섬.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/대관령.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/대흥사.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/독립기념관.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/명선도.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/범어사.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/부석사.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/선유도.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/성산일출봉.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/성심당.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/에버랜드.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/오동도.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/워터파크.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/월미도.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/의림지.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/이월드.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/전주한옥마을.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/지리산.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/차이나타운.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/천지연폭포.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/첨성대.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/한국민속촌.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/한밭수목원.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/해운대.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/travel_spot_images/활옥동굴.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weatherApp/migrations/0003_travelspot_image.py" afterDir="false" />
+    <list default="true" id="488f2e93-b6f1-42d5-86fe-55f11b70409e" name="Changes" comment="commit5">
+      <change afterPath="$PROJECT_DIR$/weatherApp/migrations/0004_travelspot_introduction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weatherApp/templates/weatherApp/spot_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherApp/templates/weatherApp/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/templates/weatherApp/result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -127,7 +96,8 @@
       <workItem from="1705899273494" duration="163000" />
       <workItem from="1705899439094" duration="375000" />
       <workItem from="1706017091051" duration="3073000" />
-      <workItem from="1706157827407" duration="1431000" />
+      <workItem from="1706157827407" duration="3379000" />
+      <workItem from="1706161213738" duration="2491000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <option name="closed" value="true" />
@@ -153,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706017122900</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit5">
+      <option name="closed" value="true" />
+      <created>1706159268970</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706159268970</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +142,7 @@
     <MESSAGE value="commit1" />
     <MESSAGE value="commit2" />
     <MESSAGE value="commit3" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit3" />
+    <MESSAGE value="commit5" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit5" />
   </component>
 </project>

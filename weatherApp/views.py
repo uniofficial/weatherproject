@@ -1,5 +1,5 @@
 import requests
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from .models import TravelSpot
 
@@ -7,8 +7,12 @@ def index(request):
     return render(request, 'weatherApp/index.html')
 
 def get_travel_spots_from_db(region):
-    travel_spots = TravelSpot.objects.filter(region=region).values_list('spot_name', flat=True)
+    travel_spots = TravelSpot.objects.filter(region=region).values_list('id', 'spot_name', flat=False)
     return list(travel_spots)
+
+def spot_detail(request, spot_id):
+    spot = get_object_or_404(TravelSpot, id=spot_id)
+    return render(request, 'weatherApp/spot_detail.html', {'spot': spot})
 
 def check_weather(request):
     if request.method == 'POST':

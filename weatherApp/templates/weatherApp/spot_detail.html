@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ spot.spot_name }} 소개</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="spot-detail-container">
+        <h2>{{ spot.spot_name }}</h2>
+        <img src="/media/travel_spot_images/{{ spot.spot_name }}.jpg" alt="{{ spot.spot_name }}" style="max-width: 300px; max-height: 300px;">
+        <p>{{ spot.introduction }}</p>
+    </div>
+</body>
+</html>

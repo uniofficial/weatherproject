@@ -14,74 +14,141 @@
                 <p>습도 : {{ humidity }}%</p>
                 <p>추천 명소 :</p>
                 <ul>
-                    {% for spot in travel_spots %}
+                    {% for spot_id, spot_name in travel_spots %}
                         <li>
-                            {{ spot }}
+                            <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                {{ spot_name }}
+                            </a>
                             <br><br>
-                            {% if spot == '경복궁' %}
-                                <img src="/media/travel_spot_images/경복궁.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '남산타워' %}
-                                <img src="/media/travel_spot_images/남산타워.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '범어사' %}
-                                <img src="/media/travel_spot_images/범어사.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '해운대' %}
-                                <img src="/media/travel_spot_images/해운대.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '이월드' %}
-                                <img src="/media/travel_spot_images/이월드.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '워터파크' %}
-                                <img src="/media/travel_spot_images/워터파크.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '월미도' %}
-                                <img src="/media/travel_spot_images/월미도.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '차이나타운' %}
-                                <img src="/media/travel_spot_images/차이나타운.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '국립광주과학관' %}
-                                <img src="/media/travel_spot_images/국립광주과학관.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '국립광주박물관' %}
-                                <img src="/media/travel_spot_images/국립광주박물관.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '성심당' %}
-                                <img src="/media/travel_spot_images/성심당.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '한밭수목원' %}
-                                <img src="/media/travel_spot_images/한밭수목원.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '명선도' %}
-                                <img src="/media/travel_spot_images/명선도.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '간절곶' %}
-                                <img src="/media/travel_spot_images/간절곶.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '에버랜드' %}
-                                <img src="/media/travel_spot_images/에버랜드.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '한국민속촌' %}
-                                <img src="/media/travel_spot_images/한국민속촌.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '대관령' %}
-                                <img src="/media/travel_spot_images/대관령.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '남이섬' %}
-                                <img src="/media/travel_spot_images/남이섬.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '활옥동굴' %}
-                                <img src="/media/travel_spot_images/활옥동굴.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '의림지' %}
-                                <img src="/media/travel_spot_images/의림지.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '국립생태원' %}
-                                <img src="/media/travel_spot_images/국립생태원.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '독립기념관' %}
-                                <img src="/media/travel_spot_images/독립기념관.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '전주한옥마을' %}
-                                <img src="/media/travel_spot_images/전주한옥마을.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '선유도' %}
-                                <img src="/media/travel_spot_images/선유도.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '오동도' %}
-                                <img src="/media/travel_spot_images/오동도.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '대흥사' %}
-                                <img src="/media/travel_spot_images/대흥사.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '첨성대' %}
-                                <img src="/media/travel_spot_images/첨성대.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '부석사' %}
-                                <img src="/media/travel_spot_images/부석사.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '지리산' %}
-                                <img src="/media/travel_spot_images/지리산.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '가야랜드' %}
-                                <img src="/media/travel_spot_images/가야랜드.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '성산일출봉' %}
-                                <img src="/media/travel_spot_images/성산일출봉.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
-                            {% elif spot == '천지연폭포' %}
-                                <img src="/media/travel_spot_images/천지연폭포.jpg" alt="{{ spot }}" style="max-width: 300px; max-height: 300px;">
+
+                            {% if spot_name == '경복궁' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/경복궁.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '남산타워' %}
+                                 <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/남산타워.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                 </a>
+                            {% elif spot_name == '범어사' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/범어사.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '해운대' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/해운대.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '이월드' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/이월드.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '워터파크' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/워터파크.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '월미도' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/월미도.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '차이나타운' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/차이나타운.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '국립광주과학관' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/국립광주과학관.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '국립광주박물관' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/국립광주박물관.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '성심당' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/성심당.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '한밭수목원' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/한밭수목원.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '명선도' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/명선도.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '간절곶' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/간절곶.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '에버랜드' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/에버랜드.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '한국민속촌' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/한국민속촌.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '대관령' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/대관령.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '남이섬' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/남이섬.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '활옥동굴' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/활옥동굴.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '의림지' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/의림지.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '국립생태원' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/국립생태원.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '독립기념관' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/독립기념관.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '전주한옥마을' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/전주한옥마을.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '선유도' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/선유도.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '오동도' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/오동도.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '대흥사' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot_id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/대흥사.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '첨성대' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot.id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/첨성대.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '부석사' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot.id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/부석사.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '지리산' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot.id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/지리산.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '가야랜드' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot.id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/가야랜드.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '성산일출봉' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot.id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/성산일출봉.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
+                            {% elif spot_name == '천지연폭포' %}
+                                <a href="{% url 'weatherApp:spot_detail' spot.id %}" title="클릭하면 소개 페이지로 이동합니다.">
+                                    <img src="/media/travel_spot_images/천지연폭포.jpg" alt="{{ spot_name }}" style="max-width: 300px; max-height: 300px;">
+                                </a>
                             {% endif %}
                         </li>
                     {% endfor %}

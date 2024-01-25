@@ -8,7 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('weatherApp/', include('weatherApp.urls', namespace='weatherApp')),
     path('', index, name='index'),  # index 함수를 불러옴
-    path('check_weather/', check_weather, name='check_weather'),  # check_weather 함수를 불러옴
+    path('check_weather/', check_weather, name='check_weather'),
 ]
 
 urlpatterns += static(
