@@ -85,3 +85,25 @@ ul li {
     border: none;
     border-radius: 4px;
 }
+
+.spot-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 세로 가운데 정렬을 위한 높이 설정 */
+}
+
+.spot-detail-content {
+    text-align: center;
+}
+
+.spot-image-box {
+    margin-bottom: 20px; /* 이미지 박스와 소개 내용 간격 조절 */
+}
+
+.spot-image {
+    max-width: 300px;
+    max-height: 300px;
+    border: 1px solid #ccc; /* 이미지 주위에 테두리 추가 */
+}
+

@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ spot.spot_name }} 소개</title>
+    <title>{{ spot.spot_name }}</title>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <div class="spot-detail-container">
-        <h2>{{ spot.spot_name }}</h2>
-        <img src="/media/travel_spot_images/{{ spot.spot_name }}.jpg" alt="{{ spot.spot_name }}" style="max-width: 300px; max-height: 300px;">
-        <p>{{ spot.introduction }}</p>
+        <div class="spot-detail-content">
+            <h2>{{ spot.spot_name }}</h2>
+            <div class="spot-image-box">
+                <img src="/media/travel_spot_images/{{ spot.spot_name }}.jpg" alt="{{ spot.spot_name }}" class="spot-image">
+            </div>
+            <p>{{ spot.introduction }}</p>
+        </div>
     </div>
 </body>
 </html>
+
