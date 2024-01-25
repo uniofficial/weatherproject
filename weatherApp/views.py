@@ -7,7 +7,7 @@ def index(request):
     return render(request, 'weatherApp/index.html')
 
 def get_travel_spots_from_db(region):
-    travel_spots = TravelSpot.objects.filter(region=region).values_list('id', 'spot_name', flat=False)
+    travel_spots = TravelSpot.objects.filter(region=region).values_list('id', 'spot_name')
     return list(travel_spots)
 
 def spot_detail(request, spot_id):
