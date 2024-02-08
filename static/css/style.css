@@ -1,7 +1,7 @@
 /* 전체 페이지 스타일 */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #FFE4E1;
+    background-color: #F5F5F5;
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 
 /* 페이지 내 헤더 스타일 */
 h2 {
-    color: #DB7093;
+    color: #4169E1;
     margin: 160px auto 10px;
     text-align: center;
 }
@@ -43,26 +43,31 @@ select, input {
 
 /* 버튼 스타일 */
 input[type="submit"] {
-    background-color: #DB7093;
+    background-color: #4169E1;
     color: #fff;
     cursor: pointer;
 }
 
 /* 결과 페이지 스타일 */
 .result-container {
-    max-width: 400px; /* 조절된 크기로 변경 */
-    margin: 20px auto;
+    max-width: 400px;
+    margin: 10px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex; /* 텍스트를 수직 중앙으로 정렬하기 위해 flexbox 사용 */
+    flex-direction: column; /* 텍스트를 세로로 배치 */
+    justify-content: flex-start; /* 텍스트를 상단으로 정렬 */
 }
 
 /* 결과 페이지 - 헤더 제목 스타일 */
 .result-container h2 {
-    color: #DB7093;
-    margin-bottom: 20px; /* 원하는 간격으로 조절 */
+    color: #4169E1;
+    margin-top: 0; /* 상단 마진을 0으로 설정하여 헤더 제목을 상단에 배치 */
+    margin-bottom: 20px; /* 하단 마진을 조절 */
+    align-self: flex-start; /* 헤더 제목을 상단으로 정렬 */
 }
 
 /* 결과 페이지 - 추천 명소 리스트 스타일 */
@@ -70,20 +75,22 @@ ul {
     list-style: none;
     padding: 0;
     text-align: center;
+    margin-top: 0; /* 리스트 상단 간격을 없앰 */
 }
 
 ul li {
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 /* 결과 페이지 - 다른 지역 선택 버튼 스타일 */
 .choose-another-btn {
-    background-color: #4285f4;
+    background-color: #F5F5F5;
     color: #fff;
     padding: 8px;
     cursor: pointer;
     border: none;
     border-radius: 4px;
+    margin-top: 0; /* 버튼 상단 간격을 없앰 */
 }
 
 .spot-detail-container {
@@ -95,15 +102,10 @@ ul li {
 
 .spot-detail-content {
     text-align: center;
+    max-width: 80%; /* 내용의 최대 너비를 조절합니다. */
+    margin-top: -150px; /* 텍스트를 위로 올리는 마진을 추가합니다. */
 }
 
 .spot-image-box {
     margin-bottom: 20px; /* 이미지 박스와 소개 내용 간격 조절 */
 }
-
-.spot-image {
-    max-width: 300px;
-    max-height: 300px;
-    border: 1px solid #ccc; /* 이미지 주위에 테두리 추가 */
-}
-

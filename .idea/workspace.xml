@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="488f2e93-b6f1-42d5-86fe-55f11b70409e" name="Changes" comment="commit7">
+    <list default="true" id="488f2e93-b6f1-42d5-86fe-55f11b70409e" name="Changes" comment="commit8_0125end">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherApp/templates/weatherApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/templates/weatherApp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherApp/templates/weatherApp/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/templates/weatherApp/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherApp/templates/weatherApp/spot_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/templates/weatherApp/spot_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +97,17 @@
       <workItem from="1706161213738" duration="2892000" />
       <workItem from="1706164127787" duration="389000" />
       <workItem from="1706164520218" duration="276000" />
-      <workItem from="1706164798762" duration="723000" />
+      <workItem from="1706164798762" duration="886000" />
+      <workItem from="1706166548968" duration="651000" />
+      <workItem from="1706610953886" duration="1546000" />
+      <workItem from="1706709506484" duration="8243000" />
+      <workItem from="1707373630716" duration="643000" />
+      <workItem from="1707374274314" duration="6000" />
+      <workItem from="1707374297719" duration="1888000" />
+      <workItem from="1707376423545" duration="383000" />
+      <workItem from="1707376831519" duration="278000" />
+      <workItem from="1707377119440" duration="185000" />
+      <workItem from="1707377324274" duration="394000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <option name="closed" value="true" />
@@ -144,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706164892605</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit8_0125end">
+      <option name="closed" value="true" />
+      <created>1706165535631</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706165535631</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +179,7 @@
     <MESSAGE value="commit5" />
     <MESSAGE value="commit6" />
     <MESSAGE value="commit7" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit7" />
+    <MESSAGE value="commit8_0125end" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit8_0125end" />
   </component>
 </project>
